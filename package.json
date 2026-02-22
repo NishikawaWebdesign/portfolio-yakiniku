@@ -8,7 +8,7 @@
   "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist -r https://github.com/yamada1230321/https-nishikawa-portfolio-yakiniku.git"
 },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
