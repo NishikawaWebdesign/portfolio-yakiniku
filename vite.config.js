@@ -1,7 +1,8 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/https-nishikawa-portfolio-yakiniku/', // ←GitHubリポジトリ名
   plugins: [react()],
 })
