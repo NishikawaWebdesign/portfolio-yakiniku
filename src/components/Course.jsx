@@ -34,17 +34,35 @@ const Set = styled.div`
   
   .frame0{
     position: relative;
-    left: 36.5vw;
+    left: 37vw;
   }
 
   .frame1{
     position: relative;
-    left: 36.5vw;
+    left: 37vw;
   }
 
   .frame2{
     position: relative;
-    left: 36.5vw;
+    left: 37vw;
+  }
+
+}
+@media (max-width:400px) {
+  
+  .frame0{
+    position: relative;
+    left: 37.5vw;
+  }
+
+  .frame1{
+    position: relative;
+    left: 37.5vw;
+  }
+
+  .frame2{
+    position: relative;
+    left: 37.5vw;
   }
 
 }
