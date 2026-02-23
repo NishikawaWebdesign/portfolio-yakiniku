@@ -16,57 +16,23 @@ const Set = styled.div`
   
   .frame0{
     position: relative;
-    left: 35.5vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .frame1{
     position: relative;
-    left: 35.5vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .frame2{
     position: relative;
-    left: 35.5vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
 }
-@media (max-width:450px) {
-  
-  .frame0{
-    position: relative;
-    left: 37vw;
-  }
-
-  .frame1{
-    position: relative;
-    left: 37vw;
-  }
-
-  .frame2{
-    position: relative;
-    left: 37vw;
-  }
-
-}
-@media (max-width:400px) {
-  
-  .frame0{
-    position: relative;
-    left: 37.5vw;
-  }
-
-  .frame1{
-    position: relative;
-    left: 37.5vw;
-  }
-
-  .frame2{
-    position: relative;
-    left: 37.5vw;
-  }
-
-}
-
 
   .main-theme{
     position:relative;
