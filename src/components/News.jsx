@@ -11,12 +11,16 @@ const Set = styled.div`
     position: relative;
     z-index:1;
     padding-bottom:9vw;
+     @media (max-width: 600px) {
+        padding-bottom:20vw
+    }
     .main-theme{
         img{
             width: 9.4vw;
-            margin:15vw auto 3vw;
+            margin:10vw auto 3vw;
             @media (max-width: 600px) {
-                width:14vw;
+                width:20vw;
+                margin-top:35vw;
             }
         }
     }
@@ -25,12 +29,16 @@ const Set = styled.div`
         align-items:flex-end;
         justify-content:center;
         gap: 8vw;
+        @media (max-width: 600px) {
+            /* flex-direction:column;
+            display:center,center */
+        }
         .notflex{
             .content{
                 margin-top:4.5vw;
                 @media (max-width: 600px) {
-                    margin:6vw auto 0;
-                    transform: translateX(8vw) scale(1.5);
+                    margin:15vw auto 0;
+                    transform: translateX(8vw) scale(2);
 
                 }
                 .sub{
@@ -65,7 +73,8 @@ const Set = styled.div`
         img{
             width: 11vw;
             @media (max-width: 600px) {
-                width:16vw;
+                transform: translate(0, 10vw);
+                width:19vw;
             }
         }
         transition:0.3s ease;

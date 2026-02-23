@@ -11,13 +11,34 @@ import MainTheme from '../assets/course-main-theme.png'
 import Acesstag from '../assets/course-tag.png'
 
 const Set = styled.div`
+
+@media (max-width:600px) {
+  
+  .frame0{
+    position: relative;
+    left: 35.5vw;
+  }
+
+  .frame1{
+    position: relative;
+    left: 35.5vw;
+  }
+
+  .frame2{
+    position: relative;
+    left: 35.5vw;
+  }
+
+}
+
+
   .main-theme{
     position:relative;
     width:11.3vw;
     margin:10vw auto 6vw;
     @media (max-width: 600px) {
-      width:20vw;
-      margin-bottom:17vw;
+      width:25vw;
+      margin-bottom:20vw;
     }
   }
   .course{
@@ -26,7 +47,8 @@ const Set = styled.div`
     justify-content: center;
     gap:3vw;
     @media (max-width: 600px) {
-      gap:18vw;
+      gap:40vw;
+      flex-direction: column; /* ← これで縦並び */
     }
 
     .course-item{
@@ -41,16 +63,10 @@ const Set = styled.div`
           width:21.5vw;
         }
       }
-      &.course-item-0{
+      &.course-item-0,&.course-item-1,&.course-item-2{
         @media (max-width:600px) {
-          position:absolute;
-          transform:scale(1.45);
-        }
-      }
-      &.course-item-1,&.course-item-2{
-        @media (max-width:600px) {
-          top:65vw;;
-          transform:scale(1.45);
+          top:20vw;;
+          transform:scale(2);
         }
       }
     }
@@ -147,7 +163,7 @@ const Set = styled.div`
       }
       @media (max-width:600px) {
         width: 20vw;
-        bottom:-70vw;
+        bottom:-40vw;
       }
     }
   }

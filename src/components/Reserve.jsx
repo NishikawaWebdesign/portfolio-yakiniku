@@ -17,7 +17,8 @@ img{
     -o-user-drag: none;    
     
     @media (max-width: 600px) {
-      width:90%;
+      display:none
+      /* width:95%; */
     }
 }
 `

@@ -36,10 +36,17 @@ const Set = styled.div`
     .splide__pagination {
       bottom: -5.5vw;    /* 好きな位置へ */
       gap:0.5vw;
+      @media (max-width:500px) {
+        bottom:-7vw
+      }
     }
     .splide__pagination__page{
       width:0.7vw;
       height:0.7vw;
+      @media (max-width:1000px) {
+        width:1.3vw;
+        height: 1.3vw;
+      }
     }
     .splide__pagination__page.is-active {
       background: #d33d3d;
@@ -69,11 +76,11 @@ const Banner = () => {
       <Splide
         options={{
           type: 'loop',
-          perPage: 1,
+          perPage: 2,
           perMove: 1,
           dragMinThreshold: 2000,
           focus: 'center',         // PCでは中央表示
-          padding: '25%',          // PCでは左右見切れ
+          padding: '0%',          // PCでは左右見切れ
 
           arrows: false,
           autoplay: true,
@@ -88,6 +95,10 @@ const Banner = () => {
               perPage: 1,
               padding: "10%",
             },
+            1440:{
+              perPage: 1,
+              padding: '25%',          // PCでは左右見切れ
+            }
           }
         }}
       >

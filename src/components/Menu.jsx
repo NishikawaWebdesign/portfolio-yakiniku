@@ -13,9 +13,9 @@ const Set = styled.div`
         width:15.8vw;
         margin:88px auto 7.5vw;
         @media (max-width:600px) {
-          margin-top:80vw;
+          margin-top:60vw;
           margin-bottom:14vw;
-          width:28vw;
+          width:35vw;
         }
     }
     .menu-items{
