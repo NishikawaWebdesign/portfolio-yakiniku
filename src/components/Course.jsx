@@ -30,6 +30,24 @@ const Set = styled.div`
   }
 
 }
+@media (max-width:450px) {
+  
+  .frame0{
+    position: relative;
+    left: 36.5vw;
+  }
+
+  .frame1{
+    position: relative;
+    left: 36.5vw;
+  }
+
+  .frame2{
+    position: relative;
+    left: 36.5vw;
+  }
+
+}
 
 
   .main-theme{
