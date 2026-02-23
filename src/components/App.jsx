@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
+import { HashRouter } from "react-router-dom";
 
 import Main from "./Main"
 import SubCourse from "../subpage/SubCourse"
@@ -16,7 +17,7 @@ import NotFound from "../subpage/NotFound"
 export function App(){
     return(
         <div className="App">
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     {/* <Route path='/news/:id' element={<SubNewses/>} /> */}
 
@@ -35,7 +36,7 @@ export function App(){
 
                     <Route path='/*' element={<NotFound/>} />
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     )
 }
